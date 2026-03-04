@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fondo -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fondo_pantallas"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Capa oscura -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/fondoOscuro"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- TITULO -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/titulo_perfectos"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="30dp"/>
+
+    <!-- NUMERO -->
+    <EditText
+        android:id="@+id/etNumero"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+
+        android:hint="@string/hint_numero"
+        android:inputType="number"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="40dp"/>
+
+    <!-- BOTON -->
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/btn_es_perfecto"
+        android:textSize="20sp"
+
+        android:backgroundTint="@color/boton"
+        android:textColor="@color/textoBoton"
+
+        app:layout_constraintTop_toBottomOf="@id/etNumero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="30dp"/>
+
+    <!-- RESULTADO -->
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+        android:textColor="@color/white"
+
+        app:layout_constraintTop_toBottomOf="@id/btnVerificar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="30dp"/>
+
+    <!-- ATRAS -->
+    <ImageButton
+        android:id="@+id/btnAtras"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_previous"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_margin="20dp"/>
+
+    <!-- SIGUIENTE -->
+    <ImageButton
+        android:id="@+id/btnSiguiente"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_next"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_margin="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

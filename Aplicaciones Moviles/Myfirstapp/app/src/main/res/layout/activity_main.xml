@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/colorFondo">
+    <TextView
+        android:id="@+id/LblNombre"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:text="@string/nombre" />
+    <EditText
+        android:id="@+id/TxtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LblNombre"
+        android:textColor="#FF00FF"
+        android:textSize="50sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/BtnHola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtNombre"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrincipal"
+        android:text="@string/ok"/>
+    <TextView
+        android:id="@+id/LblEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnHola"
+        android:textColor="#800080"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="italic"
+        android:text="Dame tu edad: " />
+    <EditText
+        android:id="@+id/TxtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LblEdad"
+        android:textColor="#800080"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="italic"
+        android:inputType="text"/>
+    <TextView
+        android:id="@+id/LblMeses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtEdad"
+        android:textColor="#0000FF"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="italic"
+        android:text="Edad en meses:"/>
+    <EditText
+        android:id="@+id/TxtMeses"
+        android:layout_width="20mm"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtEdad"
+        android:layout_alignEnd="@id/LblMeses"
+        android:textColor="#0000FF"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="italic"
+        android:inputType="text"/>
+    <!-- Botón Meses  -->
+    <Button
+        android:id="@+id/BtnMeses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/fondo"
+        android:layout_below="@+id/TxtMeses"
+        android:drawablePadding="8dp"
+        android:background="@color/colorSecundario"
+        android:text=""
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

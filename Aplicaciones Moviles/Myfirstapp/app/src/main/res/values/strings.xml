@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My first app</string>
+    <string name="nombre">Dame tu nombre:</string>
+    <string name="ok">Aceptar</string>
+    <string name="bye">Adios</string>
+    <string name="title_activity_greeting">Siguiente pantalla</string>
+
+</resources>

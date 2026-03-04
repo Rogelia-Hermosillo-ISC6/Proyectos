@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NumerosApp</string>
+
+    <string name="titulo_menu">Bienvenido a Números
+    </string>
+
+    <string name="titulo_primos">Números Primos</string>
+    <string name="titulo_perfectos">Números Perfectos</string>
+    <string name="titulo_amigos">Números Amigos</string>
+
+    <string name="btn_primos">NÚMEROS PRIMOS</string>
+    <string name="btn_perfectos">NÚMEROS PERFECTOS</string>
+    <string name="btn_amigos">NÚMEROS AMIGOS</string>
+
+    <string name="btn_es_primo">¿ES PRIMO?</string>
+    <string name="btn_es_perfecto">¿ES PERFECTO?</string>
+    <string name="btn_son_amigos">¿SON AMIGOS?</string>
+
+    <string name="hint_numero">Introduce un número</string>
+    <string name="hint_numero1">Introduce el primer número</string>
+    <string name="hint_numero2">Introduce el segundo número</string>
+</resources>

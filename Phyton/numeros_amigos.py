@@ -14,3 +14,7 @@ if son_amigos(numero1, numero2):
     print(f"Son amigos.")
 else:
     print(f"No son amigos.")
+
+
+
+

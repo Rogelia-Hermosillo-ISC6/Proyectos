@@ -1,0 +1,21 @@
+venv/
+__pycache__/
+*.pyc
+# Datasets
+**/dataset/
+**/train/
+**/test/
+
+# Modelos entrenados
+*.h5
+*.keras
+
+# Imágenes de prueba
+prueba.jpg
+prueba2.jpg
+prueba3.jpg
+prueba4.jpg
+prueba5.jpg
+
+# Archivos temporales
+estado.txt
